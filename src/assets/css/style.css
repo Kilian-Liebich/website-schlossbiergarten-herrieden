@@ -72,12 +72,16 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--first-color);
   color: var(--text-color);
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .content {
-  height: 85vh;
+  height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -97,7 +101,7 @@ body {
   align-items: center;
   background-color: var(--first-color);
   transition: opacity 0.75s, visibility 0.75s;
-  /*   TODO overflow: hidden; */
+  z-index: 1000;
 }
 
 .loader-hidden {
