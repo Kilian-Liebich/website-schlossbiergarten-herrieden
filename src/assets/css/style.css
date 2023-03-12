@@ -41,100 +41,61 @@
       url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/********************** CSS VARIABLES **********************/
-
-:root {
-  /* color palette */
-  --hue: 14;
-  --first-color: hsl(var(--hue), 91%, 54%);
-  --first-color-alt: hsl(var(--hue), 91%, 50%);
-  --title-color: hsl(var(--hue), 4%, 100%);
-  --text-color: hsl(var(--hue), 4%, 85%);
-  --text-color-light: hsl(var(--hue), 4%, 55%);
-
-  /* gradient */
-  --body-color: linear-gradient(
-    90deg,
-    hsl(104, 28%, 40%) 0%,
-    hsl(58, 28%, 40%) 100%
-  );
-  --container-color: linear-gradient(
-    136deg,
-    hsl(104, 28%, 35%) 0%,
-    hsl(58, 28%, 35%) 100%
-  );
-
-  /*Red gradient*/
-  /* --body-color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
-  --container-color: linear-gradient(136deg, hsl(360, 28%, 35%) 0%, hsl(18, 28%, 35%) 100%); */
-
-  /*Black solid*/
-  /* --body-color: hsl(30, 8%, 8%);
-  --container-color: hsl(30, 8%, 10%); */
-
-  /* fonts */
-  --body-font: 'Lato', sans-serif;
-
-  /* fonts size */
-  --biggest-font-size: 2rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-
-  /* fonts weight */
-  --font-medium: 500;
-  --font-semi-bold: 600;
-  --font-black: 900;
-}
-
-/* Responsive font size */
-@media screen and (min-width: 992px) {
-  :root {
-    --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
-}
-
-/********************** BASE SETTINGS **********************/
-
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
-}
-
-html {
-  scroll-behavior: smooth;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background: var(--body-color);
-  color: var(--text-color);
+  font-family: 'lato', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #142a26;
+  transition: opacity 0.75s, visibility 0.75s;
 }
 
-ul {
-  list-style: none;
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
-a {
-  text-decoration: none;
+.icon-castle {
+  height: 200px;
+  width: 200px;
+}
+
+.icon-castle path {
+  fill: transparent;
+  stroke-width: 10;
+  stroke: rgb(155, 152, 147);
+  stroke-dasharray: 1010;
+  stroke-dashoffset: 0;
+  animation: loading 4s linear forwards;
+}
+
+@keyframes loading {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1010;
+  }
+  80% {
+    stroke-dashoffset: 2020;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 2020;
+    fill: rgb(155, 152, 147);
+  }
 }
