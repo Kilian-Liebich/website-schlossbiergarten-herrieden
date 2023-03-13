@@ -213,6 +213,12 @@ hr {
   align-items: flex-start;
 }
 
+.contact,
+.adress {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
 /* .arrow-fill-out path {
   fill: aqua;
 } */
