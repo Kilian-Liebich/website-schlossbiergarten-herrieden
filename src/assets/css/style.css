@@ -193,7 +193,8 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  transition: all 0.2s ease-in-out;
+  /* transition: all 4s ease-in-out; */
+  cursor: pointer;
 }
 
 .content nav ul li h4 {
@@ -213,15 +214,22 @@ hr {
   align-items: flex-start;
 }
 
+.list-content a,
+span {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+}
+
 .contact,
 .adress {
   grid-column-start: 1;
   grid-column-end: 1;
 }
 
-/* .arrow-fill-out path {
-  fill: aqua;
-} */
+.fill-out path {
+  fill: var(--text-color);
+}
 
 nav ul .close {
   display: none;

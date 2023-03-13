@@ -14,11 +14,14 @@ setTimeout(() => {
 // OPEN OR CLOSE LIST ITEMS //
 
 const listItems = document.querySelectorAll('.list-wrapper');
+// const arrows = document.querySelectorAll('.arrow');
 let curListItems = '';
 
 for (let i = 0; i < listItems.length; i++) {
   listItems[i].addEventListener('click', () => {
     const [elements, wrapper] = listItems[i].children;
+    const arrow = elements.children[1];
+    arrow.classList.add('fill-out');
 
     if (curListItems === elements.children[0].innerHTML) {
       wrapper.classList.toggle('close');
