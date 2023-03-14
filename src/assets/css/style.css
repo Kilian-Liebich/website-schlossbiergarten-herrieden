@@ -113,12 +113,12 @@ hr {
   visibility: hidden;
 }
 
-.icon-castle {
+.loader-icon {
   height: 200px;
   width: 200px;
 }
 
-.icon-castle path {
+.loader-icon path {
   fill: transparent;
   stroke-width: 8;
   stroke: rgb(155, 152, 147);
@@ -154,14 +154,14 @@ hr {
 
 /* END HEADER */
 
-/* CONTENT */
+/* hero */
 
-.content {
+.hero {
   height: 100vh;
   padding: 40px 10px;
 }
 
-.content .head-line {
+.hero .head-line {
   font-size: var(--biggest-font-size);
   font-weight: 900;
   color: var(--first-color);
@@ -169,11 +169,11 @@ hr {
     1px 0 var(--text-color), 0 -1px var(--text-color);
 }
 
-.content h1 {
+.hero h1 {
   margin-bottom: 20px;
 }
 
-.content p {
+.hero p {
   font-size: var(--normal-font-size);
   color: var(--text-color);
   letter-spacing: 1px;
@@ -181,14 +181,14 @@ hr {
   margin-bottom: 20px;
 }
 
-.content nav {
+.hero nav {
   position: absolute;
   bottom: 40px;
   left: 10px;
   right: 10px;
 }
 
-.content nav ul li .list-item {
+.hero nav ul li .list-item {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -197,7 +197,7 @@ hr {
   cursor: pointer;
 }
 
-.content nav ul li h4 {
+.hero nav ul li h4 {
   font-size: var(--normal-font-size);
   font-weight: 900;
   color: var(--text-color);
@@ -235,7 +235,7 @@ nav ul .close {
   display: none;
 }
 
-/* END CONTENT */
+/* END hero */
 
 /* FOOTER */
 .footer {
