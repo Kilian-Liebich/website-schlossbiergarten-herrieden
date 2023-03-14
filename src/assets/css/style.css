@@ -49,6 +49,7 @@
 
   --biggest-font-size: 3.2rem;
   --normal-font-size: 1.1rem;
+
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
@@ -108,6 +109,7 @@ hr {
   background-color: var(--first-color);
   transition: opacity 0.75s, visibility 0.75s;
   z-index: 1000;
+  cursor: none;
 }
 
 .loader h2 {
@@ -144,7 +146,8 @@ hr {
   font-size: var(--normal-font-size);
   user-select: none;
   pointer-events: none;
-  animation: rotate-cursor 15s linear infinite;
+  animation: rotate-cursor 20s linear infinite;
+  display: none;
 }
 
 .cursor-text .cursor-span {
@@ -423,3 +426,91 @@ hr {
 }
 
 /* END ANIMATIONS */
+
+/* BREAKPOINTS  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  :root {
+    --first-color: red;
+    --biggest-font-size: 3.2rem;
+    --normal-font-size: 1.1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  :root {
+    --first-color: green;
+    --biggest-font-size: 4rem;
+    --normal-font-size: 1.5rem;
+  }
+
+  .head-text {
+    max-width: 60%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --first-color: blue;
+    --biggest-font-size: 4rem;
+    --normal-font-size: 1.5rem;
+  }
+  .head-text {
+    max-width: 60%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  :root {
+    --first-color: orange;
+    --biggest-font-size: 4rem;
+    --normal-font-size: 1.5rem;
+  }
+
+  .head-text {
+    max-width: 35%;
+  }
+
+  .accordion {
+    max-width: 75%;
+    padding: 15px 50px;
+  }
+  .hero {
+    padding: 60px 50px 50px 50px;
+  }
+
+  .cursor-text {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root {
+    --first-color: pink;
+    --biggest-font-size: 4rem;
+    --normal-font-size: 1.5rem;
+  }
+  .head-text {
+    max-width: 35%;
+  }
+
+  .accordion {
+    max-width: 70%;
+    padding: 15px 50px;
+  }
+
+  .hero {
+    padding: 60px 50px 50px 50px;
+  }
+
+  .cursor-text {
+    display: block;
+  }
+}
+
+/* END BREAKPOINTS  */
