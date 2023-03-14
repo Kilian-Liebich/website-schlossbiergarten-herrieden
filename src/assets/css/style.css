@@ -165,7 +165,13 @@ hr {
 .hero {
   height: 100vh;
   position: relative;
+  padding: 30px 25px 25px 25px;
 }
+
+/* .hero > span:nth-child(1) {
+  display: block;
+  padding-top: 30px;
+} */
 
 .hero .head-line {
   font-size: var(--biggest-font-size);
