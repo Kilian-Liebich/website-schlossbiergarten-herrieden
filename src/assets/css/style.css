@@ -83,7 +83,6 @@ p {
 
 h1 {
   margin-bottom: 20px;
-  line-height: 1.2;
 }
 
 li {
@@ -169,10 +168,10 @@ hr {
   padding: 30px 25px 25px 25px;
 }
 
-/* .hero > span:nth-child(1) {
-  display: block;
-  padding-top: 30px;
-} */
+.fade-right {
+  animation: fade-right 2s forwards;
+  animation-delay: 3.9s;
+}
 
 .hero .head-line {
   font-size: var(--biggest-font-size);
@@ -232,6 +231,11 @@ hr {
 
 .accordion .accordion-arrow-fill-out path {
   fill: var(--text-color);
+}
+
+.fade-up {
+  animation: fade-up 2s forwards;
+  animation-delay: 3.9s;
 }
 
 /* END HERO */
@@ -345,6 +349,30 @@ hr {
   0% {
     opacity: 0;
     transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(+30px);
   }
 
   100% {
