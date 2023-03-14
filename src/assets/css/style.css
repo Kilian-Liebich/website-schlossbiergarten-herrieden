@@ -154,11 +154,11 @@ hr {
 
 /* END HEADER */
 
-/* hero */
+/* HERO */
 
 .hero {
   height: 100vh;
-  padding: 40px 10px;
+  position: relative;
 }
 
 .hero .head-line {
@@ -235,7 +235,7 @@ nav ul .close {
   display: none;
 }
 
-/* END hero */
+/* END HERO */
 
 /* FOOTER */
 .footer {
@@ -243,13 +243,13 @@ nav ul .close {
   background-color: var(--second-color);
 }
 
-.footer .social {
+.footer .footer-social {
   text-align: center;
   padding-bottom: 25px;
   color: var(--text-color);
 }
 
-.footer .social a {
+.footer .footer-social a {
   font-size: 25px;
   color: var(--text-color);
   color: inherit;
@@ -278,20 +278,20 @@ nav ul .close {
 }
 
 .footer ul li a {
-  color: inherit;
+  color: var(--text-color);
   text-decoration: none;
 }
 
-.footer .logo {
+.footer .footer-logo {
   margin: 20px auto;
   width: 100px;
 }
 
-.footer .logo path {
+.footer .footer-logo path {
   fill: var(--text-color);
 }
 
-.footer .copyright {
+.footer .footer-copyright {
   margin-top: 15px;
   text-align: center;
   opacity: 0.5;
