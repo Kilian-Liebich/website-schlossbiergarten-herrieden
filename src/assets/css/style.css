@@ -47,8 +47,8 @@
   --text-color: rgb(155, 152, 147);
   --second-text-color: grey;
 
-  --biggest-font-size: 3.2rem;
-  --normal-font-size: 1.1rem;
+  --biggest-font-size: 3rem;
+  --normal-font-size: 0.938rem;
 
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
@@ -143,7 +143,7 @@ hr {
 .cursor-text {
   position: absolute;
   color: var(--text-color);
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
   user-select: none;
   pointer-events: none;
   animation: rotate-cursor 20s linear infinite;
@@ -178,7 +178,7 @@ hr {
 
 .header P {
   text-align: center;
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
   padding: 3px 0;
 }
 
@@ -429,21 +429,19 @@ hr {
 
 /* BREAKPOINTS  */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 380px and down) */
+@media only screen and (min-width: 380px) {
   :root {
-    --first-color: red;
-    --biggest-font-size: 3.2rem;
-    --normal-font-size: 1.1rem;
+    --biggest-font-size: 3rem;
+    --normal-font-size: 0.938rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   :root {
-    --first-color: green;
-    --biggest-font-size: 4rem;
-    --normal-font-size: 1.5rem;
+    --biggest-font-size: 3.2rem;
+    --normal-font-size: 1.1rem;
   }
 
   .head-text {
@@ -454,7 +452,6 @@ hr {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   :root {
-    --first-color: blue;
     --biggest-font-size: 4rem;
     --normal-font-size: 1.5rem;
   }
@@ -466,9 +463,9 @@ hr {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   :root {
-    --first-color: orange;
     --biggest-font-size: 4rem;
     --normal-font-size: 1.5rem;
+    --small-font-size: 1rem;
   }
 
   .head-text {
@@ -491,9 +488,9 @@ hr {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   :root {
-    --first-color: pink;
     --biggest-font-size: 4rem;
     --normal-font-size: 1.5rem;
+    --small-font-size: 1rem;
   }
   .head-text {
     max-width: 35%;
