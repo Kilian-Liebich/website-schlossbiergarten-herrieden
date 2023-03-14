@@ -11,6 +11,26 @@ setTimeout(() => {
 
 // END LOADING SPINNER //
 
+// CURSOR EFFECT //
+
+const cursorText = document.querySelector('.cursor-text');
+cursorText.innerHTML = cursorText.textContent.replace(
+  /\S/g,
+  '<span class = "cursor-span">$&</span>'
+);
+
+const cursorElements = document.querySelectorAll('.cursor-span');
+for (let i = 0; i < cursorElements.length; i++) {
+  cursorElements[i].style.transform = 'rotate(' + i * 12.7 + 'deg)';
+}
+
+document.addEventListener('mousemove', (e) => {
+  cursorText.style.left = e.pageX + 'px';
+  cursorText.style.top = e.pageY + 'px';
+});
+
+// END CURSOR EFFECT //
+
 // OPEN OR CLOSE LIST ITEMS //
 
 const accordionContents = document.querySelectorAll('.accordion-content');
@@ -25,10 +45,8 @@ accordionContents.forEach((item, index) => {
     if (item.classList.contains('open')) {
       description.style.height = `${description.scrollHeight}px`;
       arrow.classList.add('accordion-arrow-fill-out');
-      // arrow.classList.replace('open', 'close');
     } else {
       description.style.height = '0px';
-      // arrow.classList.replace('close', 'open');
       arrow.classList.remove('accordion-arrow-fill-out');
     }
 

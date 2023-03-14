@@ -136,6 +136,27 @@ hr {
 
 /* END LOADING SPINNER */
 
+/* CURSOR EFFECT */
+
+.cursor-text {
+  position: absolute;
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  user-select: none;
+  pointer-events: none;
+  animation: rotate-cursor 15s linear infinite;
+}
+
+.cursor-text .cursor-span {
+  position: absolute;
+  top: -60px;
+  text-transform: uppercase;
+  display: inline-block;
+  transform-origin: 0 65px;
+}
+
+/* END CURSOR EFFECT */
+
 /* HEADER */
 
 .header {
@@ -352,6 +373,16 @@ hr {
   100% {
     stroke-dashoffset: 2520;
     fill: var(--text-color);
+  }
+}
+
+@keyframes rotate-cursor {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
