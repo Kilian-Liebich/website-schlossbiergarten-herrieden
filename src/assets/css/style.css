@@ -214,6 +214,16 @@ hr {
   transition: all 0.3s linear;
 }
 
+.accordion .accordion-description a {
+  text-decoration: none;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+
+.accordion .accordion-description span {
+  opacity: 0.75;
+}
+
 .accordion-day,
 .accordion-location,
 .accordion-contact {
