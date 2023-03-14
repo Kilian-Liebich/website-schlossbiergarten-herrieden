@@ -47,8 +47,8 @@
   --text-color: rgb(155, 152, 147);
   --second-text-color: grey;
 
-  --biggest-font-size: 3rem;
-  --normal-font-size: 0.938rem;
+  --biggest-font-size: 3.2rem;
+  --normal-font-size: 1.1rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
@@ -83,6 +83,7 @@ p {
 
 h1 {
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 li {
