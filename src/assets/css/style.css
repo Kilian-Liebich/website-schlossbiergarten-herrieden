@@ -233,8 +233,8 @@ hr {
   padding: 0 15px;
   height: 0;
   display: grid;
-  grid-template-rows: auto, auto;
-  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
   transition: all 0.3s linear;
 }
 
@@ -488,6 +488,7 @@ hr {
     max-width: 75%;
     padding: 15px 50px;
   }
+
   .hero {
     padding: 60px 50px 50px 50px;
   }
@@ -523,3 +524,7 @@ hr {
 }
 
 /* END BREAKPOINTS  */
+
+/* TODO GRID LAYOUT RESPONSIVE */
+/* TODO ADD IMG */
+/* BUG NEST HUB | GALAXY FOLD */
