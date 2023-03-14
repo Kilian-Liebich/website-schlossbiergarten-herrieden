@@ -13,29 +13,38 @@ setTimeout(() => {
 
 // OPEN OR CLOSE LIST ITEMS //
 
-const listItems = document.querySelectorAll('.list-wrapper');
-// const arrows = document.querySelectorAll('.arrow');
-let curListItems = '';
+const accordionContents = document.querySelectorAll('.accordion-content');
 
-for (let i = 0; i < listItems.length; i++) {
-  listItems[i].addEventListener('click', () => {
-    const [elements, wrapper] = listItems[i].children;
-    const arrow = elements.children[1];
-    arrow.classList.add('fill-out');
+accordionContents.forEach((item, index) => {
+  let header = item.querySelector('header');
+  let description = item.querySelector('.accordion-description');
+  let arrow = item.querySelector('.accordion-arrow');
+  header.addEventListener('click', () => {
+    item.classList.toggle('open');
 
-    if (curListItems === elements.children[0].innerHTML) {
-      wrapper.classList.toggle('close');
-      wrapper.classList.toggle('open');
+    if (item.classList.contains('open')) {
+      description.style.height = `${description.scrollHeight}px`;
+      arrow.classList.add('accordion-arrow-fill-out');
+      // arrow.classList.replace('open', 'close');
     } else {
-      for (const item of listItems) {
-        item.children[1].classList.add('close');
-        item.children[1].classList.remove('open');
-      }
-      wrapper.classList.toggle('close');
-      wrapper.classList.toggle('open');
+      description.style.height = '0px';
+      // arrow.classList.replace('close', 'open');
+      arrow.classList.remove('accordion-arrow-fill-out');
     }
 
-    curListItems = elements.children[0].innerHTML;
+    removeOpen(index);
+  });
+});
+
+function removeOpen(index1) {
+  accordionContents.forEach((item2, index2) => {
+    if (index1 !== index2) {
+      let description2 = item2.querySelector('.accordion-description');
+      let arrow2 = item2.querySelector('.accordion-arrow');
+      item2.classList.remove('open');
+      description2.style.height = '0px';
+      arrow2.classList.remove('accordion-arrow-fill-out');
+    }
   });
 }
 
