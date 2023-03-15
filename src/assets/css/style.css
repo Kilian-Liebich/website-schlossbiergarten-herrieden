@@ -223,6 +223,7 @@ hr {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 700;
 }
 
 .accordion .accordion-content {
@@ -284,8 +285,9 @@ hr {
   border-radius: 5px;
   background-color: gray;
   position: absolute;
-  top: 80px;
-  right: 100px;
+  top: 60px;
+  right: 50px;
+  display: none;
 }
 .screen > .screen-img {
   background-image: url(../img/biergarten.jpg);
@@ -293,9 +295,9 @@ hr {
   width: 100%;
   background-size: 300%;
   filter: sepia(100%) hue-rotate(75deg);
-  opacity: 0.6;
-  animation: pan-img 22s linear infinite;
+  opacity: 0.5;
   position: absolute;
+  animation: pan-img 22s linear infinite;
 }
 
 /* END HERO */
@@ -574,6 +576,13 @@ hr {
   .cursor-text {
     display: block;
   }
+
+  .screen {
+    width: 540px;
+    top: 60px;
+    right: 50px;
+    display: block;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -588,17 +597,64 @@ hr {
   }
 
   .accordion {
-    max-width: 70%;
-    padding: 15px 50px;
+    max-width: 75%;
+    padding: 15px 100px;
   }
 
   .hero {
-    padding: 60px 50px 50px 50px;
+    padding: 80px 100px 100px 100px;
+    overflow: hidden;
   }
 
   .cursor-text {
     display: block;
   }
+
+  .screen {
+    width: 650px;
+    top: 80px;
+    right: 100px;
+    display: block;
+  }
+
+  /*   top: 80px;
+  right: 100px; */
+}
+
+/* Extra Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (min-width: 1600px) {
+  :root {
+    --biggest-font-size: 6rem;
+    --normal-font-size: 1.9rem;
+    --small-font-size: 1rem;
+  }
+  .head-text {
+    max-width: 35%;
+  }
+
+  .accordion {
+    max-width: 75%;
+    padding: 15px 100px;
+  }
+
+  .hero {
+    padding: 80px 100px 100px 100px;
+    overflow: hidden;
+  }
+
+  .cursor-text {
+    display: block;
+  }
+
+  .screen {
+    width: 750px;
+    top: 80px;
+    right: 100px;
+    display: block;
+  }
+
+  /*   top: 80px;
+  right: 100px; */
 }
 
 /* END BREAKPOINTS  */
