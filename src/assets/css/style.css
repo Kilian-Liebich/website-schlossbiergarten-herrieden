@@ -197,6 +197,16 @@ hr {
   animation-delay: 3.9s;
 }
 
+.fade-left {
+  animation: fade-left 2s forwards;
+  animation-delay: 3.9s;
+}
+
+.fade-up {
+  animation: fade-up 2s forwards;
+  animation-delay: 3.9s;
+}
+
 .hero .head-line {
   font-size: var(--biggest-font-size);
   font-weight: 900;
@@ -267,9 +277,24 @@ hr {
   fill: var(--text-color);
 }
 
-.fade-up {
-  animation: fade-up 2s forwards;
-  animation-delay: 3.9s;
+.screen {
+  width: 700px;
+  aspect-ratio: 10 / 16;
+  border-radius: 5px;
+  background-color: gray;
+  position: absolute;
+  top: 80px;
+  right: 100px;
+}
+.screen > .screen-img {
+  background-image: url(../img/biergarten.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: 300%;
+  filter: sepia(100%) hue-rotate(75deg);
+  opacity: 0.6;
+  animation: pan-img 22s linear infinite;
+  position: absolute;
 }
 
 /* END HERO */
@@ -434,6 +459,58 @@ hr {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes pan-img {
+  0% {
+    background-position: 36% 42%;
+    background-size: 250%;
+  }
+
+  20% {
+    background-position: 30% 35%;
+    background-size: 250%;
+  }
+
+  20.0001% {
+    background-position: 60% 85%;
+    background-size: 500%;
+  }
+
+  40% {
+    background-position: 49% 81%;
+    background-size: 500%;
+  }
+
+  40.0001% {
+    background-position: 80% 42%;
+    background-size: 300%;
+  }
+
+  60% {
+    background-position: 84% 33%;
+    background-size: 300%;
+  }
+
+  60.0001% {
+    background-position: 0% 0%;
+    background-size: 300%;
+  }
+
+  80% {
+    background-position: 15% 4%;
+    background-size: 300%;
+  }
+
+  80.0001% {
+    background-position: 80% 10%;
+    background-size: 300%;
+  }
+
+  100% {
+    background-position: 36% 42%;
+    background-size: 250%;
   }
 }
 
