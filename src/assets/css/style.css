@@ -247,7 +247,7 @@ hr {
   height: 0;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 30% 1fr;
   transition: all 0.3s linear;
 }
 
