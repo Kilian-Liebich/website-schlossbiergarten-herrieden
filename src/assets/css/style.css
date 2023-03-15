@@ -45,7 +45,7 @@
   --first-color: #142a26;
   --second-color: #101b19;
   --text-color: rgb(155, 152, 147);
-  --second-text-color: grey;
+  --second-text-color: rgb(228, 224, 218);
 
   --biggest-font-size: 3rem;
   --normal-font-size: 0.938rem;
@@ -148,6 +148,7 @@ hr {
   pointer-events: none;
   animation: rotate-cursor 20s linear infinite;
   display: none;
+  color: var(--second-text-color);
   z-index: 900;
 }
 
@@ -246,7 +247,7 @@ hr {
   height: 0;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 25% 1fr;
   transition: all 0.3s linear;
 }
 
@@ -298,6 +299,25 @@ hr {
   opacity: 0.5;
   position: absolute;
   animation: pan-img 22s linear infinite;
+}
+
+.screen-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    var(--first-color),
+    var(--first-color) 2px,
+    transparent 2px,
+    transparent 9px
+  );
+  background-size: 100% 9px;
+  animation: pan-overlay 22s linear infinite;
 }
 
 /* END HERO */
@@ -373,6 +393,7 @@ hr {
 }
 
 .hover-scale {
+  opacity: 0.75;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -414,6 +435,15 @@ hr {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% -100%;
   }
 }
 
@@ -544,8 +574,8 @@ hr {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   :root {
-    --biggest-font-size: 4rem;
-    --normal-font-size: 1.5rem;
+    --biggest-font-size: 3rem;
+    --normal-font-size: 1.3rem;
   }
   .head-text {
     max-width: 60%;
@@ -555,7 +585,7 @@ hr {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   :root {
-    --biggest-font-size: 4rem;
+    --biggest-font-size: 3.4rem;
     --normal-font-size: 1.5rem;
     --small-font-size: 1rem;
   }
@@ -564,24 +594,8 @@ hr {
     max-width: 35%;
   }
 
-  .accordion {
-    max-width: 75%;
-    padding: 15px 50px;
-  }
-
   .hero {
     padding: 60px 50px 50px 50px;
-  }
-
-  .cursor-text {
-    display: block;
-  }
-
-  .screen {
-    width: 540px;
-    top: 60px;
-    right: 50px;
-    display: block;
   }
 }
 
@@ -591,6 +605,10 @@ hr {
     --biggest-font-size: 4rem;
     --normal-font-size: 1.5rem;
     --small-font-size: 1rem;
+  }
+
+  hr {
+    color: var(--second-text-color);
   }
   .head-text {
     max-width: 35%;
@@ -617,17 +635,27 @@ hr {
     display: block;
   }
 
-  /*   top: 80px;
-  right: 100px; */
+  .accordion-arrow path {
+    stroke: var(--second-text-color);
+  }
+
+  .accordion .accordion-arrow-fill-out path {
+    fill: var(--second-text-color);
+  }
 }
 
 /* Extra Extra large devices (large laptops and desktops, 1600px and up) */
 @media only screen and (min-width: 1600px) {
   :root {
-    --biggest-font-size: 6rem;
+    --biggest-font-size: 4.3rem;
     --normal-font-size: 1.9rem;
     --small-font-size: 1rem;
   }
+
+  hr {
+    color: var(--second-text-color);
+  }
+
   .head-text {
     max-width: 35%;
   }
@@ -653,8 +681,13 @@ hr {
     display: block;
   }
 
-  /*   top: 80px;
-  right: 100px; */
+  .accordion-arrow path {
+    stroke: var(--second-text-color);
+  }
+
+  .accordion .accordion-arrow-fill-out path {
+    fill: var(--second-text-color);
+  }
 }
 
 /* END BREAKPOINTS  */
