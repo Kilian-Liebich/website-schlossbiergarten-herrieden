@@ -215,6 +215,11 @@ hr {
   color: var(--first-color);
   text-shadow: -1px 0 var(--text-color), 0 1px var(--text-color),
     1px 0 var(--text-color), 0 -1px var(--text-color);
+  line-height: 1;
+}
+
+.head-text {
+  line-height: 1.6;
 }
 
 .accordion {
