@@ -148,6 +148,7 @@ hr {
   pointer-events: none;
   animation: rotate-cursor 20s linear infinite;
   display: none;
+  z-index: 900;
 }
 
 .cursor-text .cursor-span {
@@ -171,7 +172,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 900;
+  z-index: 800;
   animation: fade-down 2s forwards;
   animation-delay: 3.9s;
 }
