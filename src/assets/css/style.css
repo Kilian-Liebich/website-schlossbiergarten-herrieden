@@ -575,7 +575,7 @@ hr {
 @media only screen and (min-width: 768px) {
   :root {
     --biggest-font-size: 3rem;
-    --normal-font-size: 1.3rem;
+    --normal-font-size: 1rem;
   }
   .head-text {
     max-width: 60%;
@@ -586,7 +586,7 @@ hr {
 @media only screen and (min-width: 992px) {
   :root {
     --biggest-font-size: 3.4rem;
-    --normal-font-size: 1.5rem;
+    --normal-font-size: 1rem;
     --small-font-size: 1rem;
   }
 
