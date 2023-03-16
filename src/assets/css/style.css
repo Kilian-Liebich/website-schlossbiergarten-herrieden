@@ -267,7 +267,7 @@ hr {
 .accordion-location,
 .accordion-contact {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: 2;
 }
 
 .accordion-hours {
