@@ -182,6 +182,7 @@ hr {
 .header P {
   text-align: center;
   font-size: var(--small-font-size);
+  color: var(--second-text-color);
   padding: 3px 0;
 }
 
@@ -558,6 +559,12 @@ hr {
     --biggest-font-size: 2.5rem;
     --normal-font-size: 1rem;
   }
+
+  .accordion-location,
+  .accordion-contact {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -569,6 +576,12 @@ hr {
 
   .head-text {
     max-width: 60%;
+  }
+
+  .accordion-location,
+  .accordion-contact {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
