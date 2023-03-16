@@ -561,7 +561,7 @@ hr {
   }
 
   .accordion .accordion-description {
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 1fr, 1fr;
   }
 }
 
@@ -577,7 +577,7 @@ hr {
   }
 
   .accordion .accordion-description {
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 1fr, 1fr;
   }
 }
 
