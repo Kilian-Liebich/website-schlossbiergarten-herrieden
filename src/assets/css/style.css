@@ -586,7 +586,7 @@ hr {
 @media only screen and (min-width: 992px) {
   :root {
     --biggest-font-size: 3.4rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.1rem;
     --small-font-size: 1rem;
   }
 
@@ -603,7 +603,7 @@ hr {
 @media only screen and (min-width: 1200px) {
   :root {
     --biggest-font-size: 4rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.2rem;
     --small-font-size: 1rem;
   }
 
@@ -648,7 +648,7 @@ hr {
 @media only screen and (min-width: 1600px) {
   :root {
     --biggest-font-size: 4.3rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.3rem;
     --small-font-size: 1rem;
   }
 
