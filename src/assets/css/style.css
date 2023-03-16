@@ -648,7 +648,7 @@ hr {
 @media only screen and (min-width: 1600px) {
   :root {
     --biggest-font-size: 4.3rem;
-    --normal-font-size: 1.9rem;
+    --normal-font-size: 1rem;
     --small-font-size: 1rem;
   }
 
