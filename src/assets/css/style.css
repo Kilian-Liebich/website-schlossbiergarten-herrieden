@@ -554,16 +554,16 @@ hr {
 /* Extra small devices (phones, 380px and down) */
 @media only screen and (min-width: 380px) {
   :root {
-    --biggest-font-size: 3rem;
-    --normal-font-size: 0.938rem;
+    --biggest-font-size: 2.3rem;
+    --normal-font-size: 0.8rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   :root {
-    --biggest-font-size: 3.2rem;
-    --normal-font-size: 1.1rem;
+    --biggest-font-size: 2.5rem;
+    --normal-font-size: 1rem;
   }
 
   .head-text {
