@@ -554,8 +554,8 @@ hr {
 /* Extra small devices (phones, 380px and down) */
 @media only screen and (min-width: 380px) {
   :root {
-    --biggest-font-size: 2.3rem;
-    --normal-font-size: 0.8rem;
+    --biggest-font-size: 2.5rem;
+    --normal-font-size: 1rem;
   }
 }
 
@@ -603,7 +603,7 @@ hr {
 @media only screen and (min-width: 1200px) {
   :root {
     --biggest-font-size: 4rem;
-    --normal-font-size: 1.5rem;
+    --normal-font-size: 1rem;
     --small-font-size: 1rem;
   }
 
