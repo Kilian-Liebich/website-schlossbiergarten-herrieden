@@ -560,10 +560,8 @@ hr {
     --normal-font-size: 1rem;
   }
 
-  .accordion-location,
-  .accordion-contact {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  .accordion .accordion-description {
+    grid-template-columns: 40% 1fr;
   }
 }
 
@@ -578,10 +576,8 @@ hr {
     max-width: 60%;
   }
 
-  .accordion-location,
-  .accordion-contact {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  .accordion .accordion-description {
+    grid-template-columns: 40% 1fr;
   }
 }
 
