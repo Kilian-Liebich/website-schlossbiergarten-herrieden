@@ -249,7 +249,7 @@ hr {
   height: 0;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 20% 1fr;
   transition: all 0.3s linear;
 }
 
@@ -267,7 +267,7 @@ hr {
 .accordion-location,
 .accordion-contact {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 1;
 }
 
 .accordion-hours {
@@ -561,7 +561,7 @@ hr {
   }
 
   .accordion .accordion-description {
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 40% 1fr;
   }
 }
 
@@ -577,7 +577,7 @@ hr {
   }
 
   .accordion .accordion-description {
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 40% 1fr;
   }
 }
 
