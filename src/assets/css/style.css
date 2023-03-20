@@ -202,7 +202,7 @@ hr {
 /* HERO */
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   padding: 30px 25px 25px 25px;
 }
@@ -734,11 +734,39 @@ hr {
 
 /* END BREAKPOINTS  */
 
-/* HEADLINE IMPRESSUM */
+/* IMPRESSUM */
 
-.impressum-headline {
+.hero .impressum-headline {
   font-weight: bold;
 }
+
+.hero .impressum-content ul li span {
+  display: block;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  padding: 0 0 5px 0;
+}
+
+.hero .impressum-content a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+}
+
+.hero .impressum-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero .impressum-content li {
+  padding: 0 0 20px 0;
+}
+
+/* END IMPRESSUM */
+
 
 /* TODO GRID LAYOUT RESPONSIVE */
 /* TODO ADD IMG */
