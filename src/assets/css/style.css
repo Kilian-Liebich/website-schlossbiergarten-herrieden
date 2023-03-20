@@ -2,43 +2,54 @@
 
 /* lato-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/lato-v23-latin-regular.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/lato-v23-latin-regular.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* lato-italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
   src: url('../fonts/lato-v23-latin-italic.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url('../fonts/lato-v23-latin-italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/lato-v23-latin-italic.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* lato-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/lato-v23-latin-700.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/lato-v23-latin-700.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* lato-900 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
   src: url('../fonts/lato-v23-latin-900.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/lato-v23-latin-900.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 :root {
@@ -239,7 +250,8 @@ hr {
   align-items: center;
   justify-content: space-between;
   min-height: 50px;
-  padding: 0 10px; /* TODO GROESSER */
+  padding: 0 10px;
+  /* TODO GROESSER */
   cursor: pointer;
   transition: all 0.3s linear;
 }
@@ -296,7 +308,8 @@ hr {
   right: 50px;
   display: none;
 }
-.screen > .screen-img {
+
+.screen>.screen-img {
   background-image: url(../img/biergarten.jpg);
   height: 100%;
   width: 100%;
@@ -316,12 +329,10 @@ hr {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(
-    var(--first-color),
-    var(--first-color) 2px,
-    transparent 2px,
-    transparent 9px
-  );
+  background: linear-gradient(var(--first-color),
+      var(--first-color) 2px,
+      transparent 2px,
+      transparent 9px);
   background-size: 100% 9px;
   animation: pan-overlay 22s linear infinite;
 }
@@ -420,9 +431,11 @@ hr {
   0% {
     stroke-dashoffset: 0;
   }
+
   40% {
     stroke-dashoffset: 1260;
   }
+
   80% {
     stroke-dashoffset: 2520;
     fill: transparent;
@@ -448,6 +461,7 @@ hr {
   from {
     background-position: 0% 0%;
   }
+
   to {
     background-position: 0% -100%;
   }
@@ -629,6 +643,7 @@ hr {
   hr {
     color: var(--second-text-color);
   }
+
   .head-text {
     max-width: 50%;
   }
@@ -718,6 +733,12 @@ hr {
 }
 
 /* END BREAKPOINTS  */
+
+/* HEADLINE IMPRESSUM */
+
+.impressum-headline {
+  font-weight: bold;
+}
 
 /* TODO GRID LAYOUT RESPONSIVE */
 /* TODO ADD IMG */
