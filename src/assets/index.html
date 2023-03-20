@@ -1,248 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Schlossbiergarten Herrieden</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body class="overflow">
-    <!-- LOADING SPINNER -->
 
-    <div class="loader">
-      <div class="loader-icon">
-        <svg viewBox="-5 -5 455.92 450.79">
-          <path
-            class="cls-1"
-            d="M298.55,241.72l-9-35.94a5.07,5.07,0,0,1-.11-.68l-3.57-39.82a3.38,3.38,0,0,0-3.07-3.34H106.92a3.37,3.37,0,0,0-3.07,3.33l-3.65,39.84a4.54,4.54,0,0,1-.11.66l-8.92,36c-.59,2.4.9,4.81,3,4.81h7.67c1.71,0,3.09,1.68,3.09,3.74V514.15c0,2.07,1.39,3.74,3.1,3.74h31.17V454.7c0-18.64,18.74-33.76,41.84-33.76s41.84,15.12,41.84,33.76v63.19h58.89c1.71,0,3.09-1.67,3.09-3.74V250.28c0-2.06,1.39-3.74,3.09-3.74h7.67C297.66,246.54,299.15,244.12,298.55,241.72ZM159.14,333.88a6,6,0,0,1-6,6.05H139.89a6.05,6.05,0,0,1-6-6.05V306.35a6,6,0,0,1,6-6H153.1a6,6,0,0,1,6,6Zm0-96.18a6,6,0,0,1-6,6H139.89a6,6,0,0,1-6-6V210.17a6,6,0,0,1,6-6H153.1a6,6,0,0,1,6,6Zm96.74,95.73a6,6,0,0,1-6,6H236.63a6,6,0,0,1-6-6V305.9a6,6,0,0,1,6-6h13.21a6,6,0,0,1,6,6Zm0-96.18a6,6,0,0,1-6,6H236.63a6,6,0,0,1-6-6V209.72a6,6,0,0,1,6-6h13.21a6,6,0,0,1,6,6Z"
-            transform="translate(-91.04 -76.11)"
-          />
-          <path
-            class="cls-1"
-            d="M508.71,326.3h-40a4.25,4.25,0,0,0-4.25,4.25V353.7a2.61,2.61,0,0,1-2.61,2.61h-29.4a2.61,2.61,0,0,1-2.61-2.61V330.55a4.25,4.25,0,0,0-4.25-4.25h-40a4.25,4.25,0,0,0-4.25,4.25V353.7a2.61,2.61,0,0,1-2.61,2.61h-29.4a2.61,2.61,0,0,1-2.61-2.61V330.55a4.25,4.25,0,0,0-4.25-4.25h-40a4.25,4.25,0,0,0-4.25,4.25V514a3.93,3.93,0,0,0,3.94,3.93H509A3.93,3.93,0,0,0,513,514V330.55A4.25,4.25,0,0,0,508.71,326.3Z"
-            transform="translate(-91.04 -76.11)"
-          />
-          <path
-            class="cls-1"
-            d="M100,143.39a3.45,3.45,0,0,0,2,6.25H287.55a3.45,3.45,0,0,0,2-6.25l-43.05-30.92L196.78,76.75a3.45,3.45,0,0,0-4,0L143,112.47Z"
-            transform="translate(-91.04 -76.11)"
-          />
-        </svg>
-      </div>
-      <h2>Schlossbiergarten<br />Herrieden</h2>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schlossbiergarten Herrieden</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="overflow">
+  <!-- LOADING SPINNER -->
+
+  <div class="loader">
+    <div class="loader-icon">
+      <svg viewBox="-5 -5 455.92 450.79">
+        <path class="cls-1"
+          d="M298.55,241.72l-9-35.94a5.07,5.07,0,0,1-.11-.68l-3.57-39.82a3.38,3.38,0,0,0-3.07-3.34H106.92a3.37,3.37,0,0,0-3.07,3.33l-3.65,39.84a4.54,4.54,0,0,1-.11.66l-8.92,36c-.59,2.4.9,4.81,3,4.81h7.67c1.71,0,3.09,1.68,3.09,3.74V514.15c0,2.07,1.39,3.74,3.1,3.74h31.17V454.7c0-18.64,18.74-33.76,41.84-33.76s41.84,15.12,41.84,33.76v63.19h58.89c1.71,0,3.09-1.67,3.09-3.74V250.28c0-2.06,1.39-3.74,3.09-3.74h7.67C297.66,246.54,299.15,244.12,298.55,241.72ZM159.14,333.88a6,6,0,0,1-6,6.05H139.89a6.05,6.05,0,0,1-6-6.05V306.35a6,6,0,0,1,6-6H153.1a6,6,0,0,1,6,6Zm0-96.18a6,6,0,0,1-6,6H139.89a6,6,0,0,1-6-6V210.17a6,6,0,0,1,6-6H153.1a6,6,0,0,1,6,6Zm96.74,95.73a6,6,0,0,1-6,6H236.63a6,6,0,0,1-6-6V305.9a6,6,0,0,1,6-6h13.21a6,6,0,0,1,6,6Zm0-96.18a6,6,0,0,1-6,6H236.63a6,6,0,0,1-6-6V209.72a6,6,0,0,1,6-6h13.21a6,6,0,0,1,6,6Z"
+          transform="translate(-91.04 -76.11)" />
+        <path class="cls-1"
+          d="M508.71,326.3h-40a4.25,4.25,0,0,0-4.25,4.25V353.7a2.61,2.61,0,0,1-2.61,2.61h-29.4a2.61,2.61,0,0,1-2.61-2.61V330.55a4.25,4.25,0,0,0-4.25-4.25h-40a4.25,4.25,0,0,0-4.25,4.25V353.7a2.61,2.61,0,0,1-2.61,2.61h-29.4a2.61,2.61,0,0,1-2.61-2.61V330.55a4.25,4.25,0,0,0-4.25-4.25h-40a4.25,4.25,0,0,0-4.25,4.25V514a3.93,3.93,0,0,0,3.94,3.93H509A3.93,3.93,0,0,0,513,514V330.55A4.25,4.25,0,0,0,508.71,326.3Z"
+          transform="translate(-91.04 -76.11)" />
+        <path class="cls-1"
+          d="M100,143.39a3.45,3.45,0,0,0,2,6.25H287.55a3.45,3.45,0,0,0,2-6.25l-43.05-30.92L196.78,76.75a3.45,3.45,0,0,0-4,0L143,112.47Z"
+          transform="translate(-91.04 -76.11)" />
+      </svg>
+    </div>
+    <h2>Schlossbiergarten<br />Herrieden</h2>
+  </div>
+
+  <!-- END LOADING SPINNER -->
+
+  <!-- CURSOR EFFECT -->
+
+  <h3 class="cursor-text">-Schlossbiergarten-Herrieden</h3>
+
+  <!-- END CURSOR EFFECT -->
+
+  <!-- HEADER -->
+
+  <div class="header">
+    <p>Die website ist gerade in der Entwicklung</p>
+  </div>
+
+  <!-- END HEADER -->
+
+  <!-- HERO -->
+  <section class="hero" id="hero-section">
+    <!-- IMG SCREEN -->
+
+    <div class="screen fade-left">
+      <div class="screen-img"></div>
+      <div class="screen-overlay"></div>
+      <div class="screen-content"></div>
     </div>
 
-    <!-- END LOADING SPINNER -->
+    <!-- END IMG SCREEN -->
 
-    <!-- CURSOR EFFECT -->
+    <!-- HEADLINE -->
 
-    <h3 class="cursor-text">-Schlossbiergarten-Herrieden</h3>
+    <h5 class="head-line fade-right">Neueröffnung</h5>
+    <h1 class="head-line fade-right">Schlossbiergarten<br />Herrieden</h1>
 
-    <!-- END CURSOR EFFECT -->
+    <!-- END HEADLINE -->
 
-    <!-- HEADER -->
+    <!-- HEADTEXT -->
+    <p class="head-text fade-right">
+      Mitten in der schönen Altstadt von Herrieden, zwischen historischem
+      Stadtschloss und Stadtpark gelegen, befindet sich der gemütliche
+      Schlossbiergarten. Vom fränkischem Bier bis zur hausgemachten
+      Zitronenlimonade reicht das breite Getränkeangebot. Leckere Speisen und
+      Schmankerln sowie hausgemachter Kuchen verlocken zur Einkehr.
+    </p>
 
-    <div class="header">
-      <p>Die website ist gerade in der Entwicklung</p>
-    </div>
+    <!-- END HEADTEXT -->
 
-    <!-- END HEADER -->
-
-    <!-- HERO -->
-    <section class="hero" id="hero-section">
-      <!-- IMG SCREEN -->
-
-      <div class="screen fade-left">
-        <div class="screen-img"></div>
-        <div class="screen-overlay"></div>
-        <div class="screen-content"></div>
-      </div>
-
-      <!-- END IMG SCREEN -->
-
-      <!-- HEADLINE -->
-
-      <h5 class="head-line fade-right">Neueröffnung</h5>
-      <h1 class="head-line fade-right">Schlossbiergarten<br />Herrieden</h1>
-
-      <!-- END HEADLINE -->
-
-      <!-- HEADTEXT -->
-      <p class="head-text fade-right">
-        Mitten in der schönen Altstadt von Herrieden, zwischen historischem
-        Stadtschloss und Stadtpark gelegen, befindet sich der gemütliche
-        Schlossbiergarten. Vom fränkischem Bier bis zur hausgemachten
-        Zitronenlimonade reicht das breite Getränkeangebot. Leckere Speisen und
-        Schmankerln sowie hausgemachter Kuchen verlocken zur Einkehr.
-      </p>
-
-      <!-- END HEADTEXT -->
-
-      <!-- ACCORDION -->
-      <div class="accordion fade-up">
-        <div class="accordion-content">
-          <header>
-            <span class="accordion-title hover-opacity">Öffnungszeiten:</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="55"
-              height="55"
-              viewBox="0 0 62.891 62.891"
-              alt="arrow-open"
-              class="accordion-arrow hover-scale hover-opacity"
-            >
-              <path
-                d="M16.458,0,30.669,14.53H0v8.942H30.768v.3L16.458,38h10.63L46.509,19.1,27.088,0Z"
-                transform="translate(1.414 34.605) rotate(-45)"
-                fill="none"
-                stroke="rgb(155, 152, 147)"
-                stroke-width="2"
-              />
-            </svg>
-          </header>
-          <div class="accordion-description">
-            <span class="accordion-day">Donnerstag</span>
-            <span class="accordion-hours">15:00 – 22:00</span>
-            <span class="accordion-day">Freitag</span>
-            <span class="accordion-hours">11:00 – 22:00</span>
-            <span class="accordion-day">Samstag</span>
-            <span class="accordion-hours">11:00 – 22:00</span>
-            <span class="accordion-day">Sonntag</span>
-            <span class="accordion-hours">11:00 – 22:00</span>
-            <span class="accordion-day">Feiertag</span>
-            <span class="accordion-hours">11:00 – 22:00</span>
-          </div>
-
-          <hr />
-        </div>
-        <div class="accordion-content">
-          <header>
-            <span class="accordion-title hover-opacity">Adresse:</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="55"
-              height="55"
-              viewBox="0 0 62.891 62.891"
-              alt="arrow-open"
-              class="accordion-arrow hover-scale hover-opacity"
-            >
-              <path
-                d="M16.458,0,30.669,14.53H0v8.942H30.768v.3L16.458,38h10.63L46.509,19.1,27.088,0Z"
-                transform="translate(1.414 34.605) rotate(-45)"
-                fill="none"
-                stroke="rgb(155, 152, 147)"
-                stroke-width="2"
-              />
-            </svg>
-          </header>
-          <div class="accordion-description">
-            <a
-              href="https://www.google.de/maps/place/Biergarten+am+Stadtschloss+Herrieden/@49.2336171,10.4992384,20z/data=!4m15!1m8!3m7!1s0x4798b8b58ae933ad:0x6efc7239333b2132!2sVogteipl.+8,+91567+Herrieden!3b1!8m2!3d49.2336182!4d10.4994503!16s%2Fg%2F11c16z6yr0!3m5!1s0x4798b924a192d15f:0xf159fa6c3016fbde!8m2!3d49.2338104!4d10.4991312!16s%2Fg%2F11fmzk467l"
-              target="_blank"
-              class="accordion-location hover-opacity"
-              >Vogteiplatz 8-10</a
-            >
-            <a
-              href="https://www.google.de/maps/place/Biergarten+am+Stadtschloss+Herrieden/@49.2336171,10.4992384,20z/data=!4m15!1m8!3m7!1s0x4798b8b58ae933ad:0x6efc7239333b2132!2sVogteipl.+8,+91567+Herrieden!3b1!8m2!3d49.2336182!4d10.4994503!16s%2Fg%2F11c16z6yr0!3m5!1s0x4798b924a192d15f:0xf159fa6c3016fbde!8m2!3d49.2338104!4d10.4991312!16s%2Fg%2F11fmzk467l"
-              target="_blank"
-              class="accordion-location hover-opacity"
-              >91567 Herrieden</a
-            >
-          </div>
-
-          <hr />
-        </div>
-        <div class="accordion-content">
-          <header>
-            <span class="accordion-title hover-opacity">Kontakt:</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="55"
-              height="55"
-              viewBox="0 0 62.891 62.891"
-              alt="arrow-open"
-              class="accordion-arrow hover-scale hover-opacity"
-            >
-              <path
-                d="M16.458,0,30.669,14.53H0v8.942H30.768v.3L16.458,38h10.63L46.509,19.1,27.088,0Z"
-                transform="translate(1.414 34.605) rotate(-45)"
-                fill="none"
-                stroke="rgb(155, 152, 147)"
-                stroke-width="2"
-              />
-            </svg>
-          </header>
-          <div class="accordion-description">
-            <span class="accordion-contact">Fritz Müller</span>
-            <a
-              href="mailto:Fritzi.Mueller@yahoo.de"
-              class="accordion-contact hover-opacity"
-              >fritzi.mueller@yahoo.de</a
-            >
-            <a href="tel:+4917621431138" class="accordion-contact hover-opacity"
-              >0176 21431138</a
-            >
-          </div>
-
-          <hr />
-        </div>
-      </div>
-      <!-- END ACCORDION -->
-    </section>
-    <!-- END HERO -->
-
-    <!-- FOOTER -->
-    <section class="footer">
-      <div class="footer-social">
-        <a
-          href="mailto:Fritzi.Mueller@yahoo.de"
-          class="hover-opacity hover-scale"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="tel:+4917621431138" class="hover-opacity hover-scale"
-          ><i class="fab fa-instagram"></i
-        ></a>
-      </div>
-
-      <ul>
-        <li><a href="#" class="hover-opacity">Impressum</a></li>
-      </ul>
-
-      <div class="footer-logo hover-scale hover-opacity">
-        <a href="#hero-section">
-          <svg viewBox="0 0 421.92 441.79">
-            <path
-              class="cls-1"
-              d="M298.55,241.72l-9-35.94a5.07,5.07,0,0,1-.11-.68l-3.57-39.82a3.38,3.38,0,0,0-3.07-3.34H106.92a3.37,3.37,0,0,0-3.07,3.33l-3.65,39.84a4.54,4.54,0,0,1-.11.66l-8.92,36c-.59,2.4.9,4.81,3,4.81h7.67c1.71,0,3.09,1.68,3.09,3.74V514.15c0,2.07,1.39,3.74,3.1,3.74h31.17V454.7c0-18.64,18.74-33.76,41.84-33.76s41.84,15.12,41.84,33.76v63.19h58.89c1.71,0,3.09-1.67,3.09-3.74V250.28c0-2.06,1.39-3.74,3.09-3.74h7.67C297.66,246.54,299.15,244.12,298.55,241.72ZM159.14,333.88a6,6,0,0,1-6,6.05H139.89a6.05,6.05,0,0,1-6-6.05V306.35a6,6,0,0,1,6-6H153.1a6,6,0,0,1,6,6Zm0-96.18a6,6,0,0,1-6,6H139.89a6,6,0,0,1-6-6V210.17a6,6,0,0,1,6-6H153.1a6,6,0,0,1,6,6Zm96.74,95.73a6,6,0,0,1-6,6H236.63a6,6,0,0,1-6-6V305.9a6,6,0,0,1,6-6h13.21a6,6,0,0,1,6,6Zm0-96.18a6,6,0,0,1-6,6H236.63a6,6,0,0,1-6-6V209.72a6,6,0,0,1,6-6h13.21a6,6,0,0,1,6,6Z"
-              transform="translate(-91.04 -76.11)"
-            />
-            <path
-              class="cls-1"
-              d="M508.71,326.3h-40a4.25,4.25,0,0,0-4.25,4.25V353.7a2.61,2.61,0,0,1-2.61,2.61h-29.4a2.61,2.61,0,0,1-2.61-2.61V330.55a4.25,4.25,0,0,0-4.25-4.25h-40a4.25,4.25,0,0,0-4.25,4.25V353.7a2.61,2.61,0,0,1-2.61,2.61h-29.4a2.61,2.61,0,0,1-2.61-2.61V330.55a4.25,4.25,0,0,0-4.25-4.25h-40a4.25,4.25,0,0,0-4.25,4.25V514a3.93,3.93,0,0,0,3.94,3.93H509A3.93,3.93,0,0,0,513,514V330.55A4.25,4.25,0,0,0,508.71,326.3Z"
-              transform="translate(-91.04 -76.11)"
-            />
-            <path
-              class="cls-1"
-              d="M100,143.39a3.45,3.45,0,0,0,2,6.25H287.55a3.45,3.45,0,0,0,2-6.25l-43.05-30.92L196.78,76.75a3.45,3.45,0,0,0-4,0L143,112.47Z"
-              transform="translate(-91.04 -76.11)"
-            />
+    <!-- ACCORDION -->
+    <div class="accordion fade-up">
+      <div class="accordion-content">
+        <header>
+          <span class="accordion-title hover-opacity">Öffnungszeiten:</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 62.891 62.891" alt="arrow-open"
+            class="accordion-arrow hover-scale hover-opacity">
+            <path d="M16.458,0,30.669,14.53H0v8.942H30.768v.3L16.458,38h10.63L46.509,19.1,27.088,0Z"
+              transform="translate(1.414 34.605) rotate(-45)" fill="none" stroke="rgb(155, 152, 147)"
+              stroke-width="2" />
           </svg>
-        </a>
+        </header>
+        <div class="accordion-description">
+          <span class="accordion-day">Donnerstag</span>
+          <span class="accordion-hours">15:00 – 22:00</span>
+          <span class="accordion-day">Freitag</span>
+          <span class="accordion-hours">11:00 – 22:00</span>
+          <span class="accordion-day">Samstag</span>
+          <span class="accordion-hours">11:00 – 22:00</span>
+          <span class="accordion-day">Sonntag</span>
+          <span class="accordion-hours">11:00 – 22:00</span>
+          <span class="accordion-day">Feiertag</span>
+          <span class="accordion-hours">11:00 – 22:00</span>
+        </div>
+
+        <hr />
       </div>
+      <div class="accordion-content">
+        <header>
+          <span class="accordion-title hover-opacity">Adresse:</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 62.891 62.891" alt="arrow-open"
+            class="accordion-arrow hover-scale hover-opacity">
+            <path d="M16.458,0,30.669,14.53H0v8.942H30.768v.3L16.458,38h10.63L46.509,19.1,27.088,0Z"
+              transform="translate(1.414 34.605) rotate(-45)" fill="none" stroke="rgb(155, 152, 147)"
+              stroke-width="2" />
+          </svg>
+        </header>
+        <div class="accordion-description">
+          <a href="https://www.google.de/maps/place/Biergarten+am+Stadtschloss+Herrieden/@49.2336171,10.4992384,20z/data=!4m15!1m8!3m7!1s0x4798b8b58ae933ad:0x6efc7239333b2132!2sVogteipl.+8,+91567+Herrieden!3b1!8m2!3d49.2336182!4d10.4994503!16s%2Fg%2F11c16z6yr0!3m5!1s0x4798b924a192d15f:0xf159fa6c3016fbde!8m2!3d49.2338104!4d10.4991312!16s%2Fg%2F11fmzk467l"
+            target="_blank" class="accordion-location hover-opacity">Vogteiplatz 8-10</a>
+          <a href="https://www.google.de/maps/place/Biergarten+am+Stadtschloss+Herrieden/@49.2336171,10.4992384,20z/data=!4m15!1m8!3m7!1s0x4798b8b58ae933ad:0x6efc7239333b2132!2sVogteipl.+8,+91567+Herrieden!3b1!8m2!3d49.2336182!4d10.4994503!16s%2Fg%2F11c16z6yr0!3m5!1s0x4798b924a192d15f:0xf159fa6c3016fbde!8m2!3d49.2338104!4d10.4991312!16s%2Fg%2F11fmzk467l"
+            target="_blank" class="accordion-location hover-opacity">91567 Herrieden</a>
+        </div>
 
-      <p class="footer-copyright">Goji-Li GmbH © 2023</p>
-    </section>
-    <!-- END FOOTER -->
+        <hr />
+      </div>
+      <div class="accordion-content">
+        <header>
+          <span class="accordion-title hover-opacity">Kontakt:</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 62.891 62.891" alt="arrow-open"
+            class="accordion-arrow hover-scale hover-opacity">
+            <path d="M16.458,0,30.669,14.53H0v8.942H30.768v.3L16.458,38h10.63L46.509,19.1,27.088,0Z"
+              transform="translate(1.414 34.605) rotate(-45)" fill="none" stroke="rgb(155, 152, 147)"
+              stroke-width="2" />
+          </svg>
+        </header>
+        <div class="accordion-description">
+          <span class="accordion-contact">Fritz Müller</span>
+          <a href="mailto:Fritzi.Mueller@yahoo.de" class="accordion-contact hover-opacity">fritzi.mueller@yahoo.de</a>
+          <a href="tel:+4917621431138" class="accordion-contact hover-opacity">0176 21431138</a>
+        </div>
 
-    <script src="./js/main.js"></script>
-  </body>
+        <hr />
+      </div>
+    </div>
+    <!-- END ACCORDION -->
+  </section>
+  <!-- END HERO -->
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer-social">
+      <a href="mailto:Fritzi.Mueller@yahoo.de" class="hover-opacity hover-scale"><i class="fab fa-instagram"></i></a>
+      <a href="tel:+4917621431138" class="hover-opacity hover-scale"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <ul>
+      <li><a href="./Impressum.html" class="hover-opacity" target="_blank">Impressum</a></li>
+    </ul>
+
+    <div class="footer-logo hover-scale hover-opacity">
+      <a href="#hero-section">
+        <svg viewBox="0 0 421.92 441.79">
+          <path class="cls-1"
+            d="M298.55,241.72l-9-35.94a5.07,5.07,0,0,1-.11-.68l-3.57-39.82a3.38,3.38,0,0,0-3.07-3.34H106.92a3.37,3.37,0,0,0-3.07,3.33l-3.65,39.84a4.54,4.54,0,0,1-.11.66l-8.92,36c-.59,2.4.9,4.81,3,4.81h7.67c1.71,0,3.09,1.68,3.09,3.74V514.15c0,2.07,1.39,3.74,3.1,3.74h31.17V454.7c0-18.64,18.74-33.76,41.84-33.76s41.84,15.12,41.84,33.76v63.19h58.89c1.71,0,3.09-1.67,3.09-3.74V250.28c0-2.06,1.39-3.74,3.09-3.74h7.67C297.66,246.54,299.15,244.12,298.55,241.72ZM159.14,333.88a6,6,0,0,1-6,6.05H139.89a6.05,6.05,0,0,1-6-6.05V306.35a6,6,0,0,1,6-6H153.1a6,6,0,0,1,6,6Zm0-96.18a6,6,0,0,1-6,6H139.89a6,6,0,0,1-6-6V210.17a6,6,0,0,1,6-6H153.1a6,6,0,0,1,6,6Zm96.74,95.73a6,6,0,0,1-6,6H236.63a6,6,0,0,1-6-6V305.9a6,6,0,0,1,6-6h13.21a6,6,0,0,1,6,6Zm0-96.18a6,6,0,0,1-6,6H236.63a6,6,0,0,1-6-6V209.72a6,6,0,0,1,6-6h13.21a6,6,0,0,1,6,6Z"
+            transform="translate(-91.04 -76.11)" />
+          <path class="cls-1"
+            d="M508.71,326.3h-40a4.25,4.25,0,0,0-4.25,4.25V353.7a2.61,2.61,0,0,1-2.61,2.61h-29.4a2.61,2.61,0,0,1-2.61-2.61V330.55a4.25,4.25,0,0,0-4.25-4.25h-40a4.25,4.25,0,0,0-4.25,4.25V353.7a2.61,2.61,0,0,1-2.61,2.61h-29.4a2.61,2.61,0,0,1-2.61-2.61V330.55a4.25,4.25,0,0,0-4.25-4.25h-40a4.25,4.25,0,0,0-4.25,4.25V514a3.93,3.93,0,0,0,3.94,3.93H509A3.93,3.93,0,0,0,513,514V330.55A4.25,4.25,0,0,0,508.71,326.3Z"
+            transform="translate(-91.04 -76.11)" />
+          <path class="cls-1"
+            d="M100,143.39a3.45,3.45,0,0,0,2,6.25H287.55a3.45,3.45,0,0,0,2-6.25l-43.05-30.92L196.78,76.75a3.45,3.45,0,0,0-4,0L143,112.47Z"
+            transform="translate(-91.04 -76.11)" />
+        </svg>
+      </a>
+    </div>
+
+    <p class="footer-copyright">Goji-Li GmbH © 2023</p>
+  </section>
+  <!-- END FOOTER -->
+
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
